@@ -1,0 +1,80 @@
+-- CONFIG:
+shared.ftime = 3*50 + 40 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[ 
+      D       H       J    [WJ]    [lY]    [lP]       Y       O 
+      H       J       l   [tJD]    [oZ]   [hZD]       o       s 
+      Z       c       v   [viH]    [sV]   [lhV]       s       H 
+      B       B    [ml]       B       V    [vY]       s    [hD] 
+      s    [lD]       V       v       Z   [hZT]    [cO]   [cHD] 
+      O       S       Z       L    [tL]    [ZO]  [sZJD]       O 
+   [sH]       H       J   [lOE]    [iL]   [SPL]       i       O 
+      Z       L   [lg(]       E       O       E    [oJ]       D 
+      H       J   [JD%]    [l(]    [tl]       (       E       ( 
+      W       H    [J(]       l   [JD8]    [wZ]   [hZY]       w 
+      t       w       Y       Z       c       v   [vH4]    [V8] 
+  [lWV]       8       w    [B8]       B   [qml]       B       8 
+      V   [vl@]       8       w       8       (       V       v 
+      Z   [gZ*]    [cW]   [cTH]       W       i       W       T 
+   [ZW]       L   [LH8]    [ZW]    [ZY]       W       t       W 
+      Y    [H8]       J  [lg^S]    [qL]       W       g   [SH(] 
+      E    [hY]       (   [SH%]       Y       P       S   [sWO] 
+      O       s       D   [gO*]       W   [iYD]       W    [TO] 
+   [oW]    [YO]    [gW]   [PD8]    [YW]    [tO]    [oW]    [tO] 
+   [oW]    [tO]    [D8]   [i^D]    [qS]    [WS]    [s^]   [sO(] 
+   [PE]    [YP]    [YO]   [YP%]    [s(]   [sYE]       (    [tW] 
+   [O(]    [sE]    [D%]    [O2]       g    [t9]    [iW]    [O9] 
+   [qo]    [h9]   [rha]    [yg]   [oD8]       w       Y    [sY] 
+      S   [qPD]    [tp]    [iS]       s   [i^S]       q    [ED] 
+      q    [gT]       q       h       W    [^H]  [lgS@]       ^ 
+      (       ^  [wgSJ]       D       H       J  [PJD%]    [l(] 
+ [tslD]       (       E       (       W       H    [J(]       l 
+ [PJD1]    [wZ]  [hZYD]       w   [tso]       w       Y       Z 
+   [wc]       v  [vlH4]   [VH8]   [WVH]       8       q   [JB8] 
+  [mlW]    [JB]       8    [VH]  [vlh@]       8    [sY]       t 
+   [hY]   [tVH]   [vhY]   [ZD(]   [ZD!]   [gcW]   [gcY]       W 
+      T       W       Y    [ZW]       L    [L8]   [ZWD]   [tZD] 
+      W       Y       W       t    [WH]       J   [lg^]    [qL] 
+  [gWL]       q       T       q   [ZWD]   [^SL]  [lgS@]       ^ 
+      T       W   [gJ(]    [ED]    [oH]    [YJ]  [PJD%]    [l(] 
+ [tslD]       (       E       (       W       H    [J(]       l 
+  [JD8]    [wZ]  [hZYD]       w   [tso]       w       Y    [ZD] 
+  [wgc]    [vh]   [vl4]   [VH8]   [WVH]       8   [tqi]   [JB8] 
+  [mlW]    [JB]       8    [VH]  [vlh@]       8    [sY]       t 
+  [ohY]   [tVH]   [vhY]   [ZD(]   [ZD!]   [gc%]   [gcY]       W 
+      T       W       Y    [ZW]       L   [SL8]   [ZWD]   [tZD] 
+      W       Y       W       t    [WH]       J  [lg^S]    [qL] 
+      W       g   [HD(]       E    [hY]       E   [SH%]       ( 
+      E       T    [t%]       O       s       D   [gO*]       W 
+  [iYD]       W    [TO]    [oW]    [YO]    [g*]   [PD8]    [YW] 
+   [tO]    [oW]    [tO]    [oW]    [tO]    [D8]  [i^OD]    [qS] 
+   [TS]    [sq]  [siY@]    [^P]  [iWTP]       O   [YP%]    [s(] 
+  [sYE]       (    [tW]    [O(]    [ts]    [D(]   [sg2]    [t9] 
+   [iW]    [tO]  [yro5]    [h9]   [rha]    [yg]   [oD8]       w 
+      Y       s       S   [qPD]    [tp]    [iS]       s   [i^S] 
+      q    [TD]       q   [igW]       q    [oh]       W   [^OH] 
+ [slD@]       ^    [tY]       O  [gPJ@]    [ED]   [YOH]    [JE] 
+ [PJD%]    [l(] [tslYD]       (    [YE]       (       W       H 
+   [J%]       l   [PJ1]    [wZ]   [ZYD]       w   [toD]       w 
+      Y       Z    [wc]       v  [vlh4]   [VH8]   [WVH]       8 
+      w   [JB8]   [qml]    [JB]       4    [VH] [vlh@(]       8 
+   [sY]       t   [ohY]   [tVH]   [vhY]   [ZD(]   [ZD!]   [gc%] 
+  [gcY]       W    [iT]       W       Y       D    [ZW]       L 
+ [LHD8]    [ZW]  [tZJD]       W       Y       W       t    [WH] 
+      J  [lg^S]    [qL]       W    [g^]   [SH@]       ^   [whS] 
+      ^  [jdG3]       0   [yeI]       p  [urWO]       f       j 
+      k    [ke]    [uL]    [aL]       u       p       u       S 
+      j       k       L   [kfT]    [xO]   [xfS]       O       S 
+      O       f       x       C       V  [VQLH]    [bT]  [pjbL] 
+      T       O    [nT]       n    [LI]       n       b    [V0] 
+      T    [uO]       T    [uS]    [jT]    [uH]    [f0]   [pf2] 
+   [G6]   [upG]       e    [yI]       e    [up]    [f9]       d 
+  [da!]    [f6]   [ufa]       e    [pT]       e       T       u 
+      p       a   [SI7]       d       e       I   [yp3]       7 
+  [yO0]    [p6]       0       r       y       T       k       L 
+  [rpL]    [zI]       p       G   [ujd]       H   [ja6]       0 
+      r       u  [upT6] ]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nameless9000/RobloxPianoAutoplayer/main/script.lua"))()
